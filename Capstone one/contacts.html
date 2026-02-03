@@ -1,0 +1,73 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Adriano's portfolio website">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  <!-- Dark mode toggle -->
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+     <a href="portfolio.html">🏠 Home</a>
+      <a href="about.html">👤 About</a>
+      <a href="skills.html">🛠️ Skills</a>
+      <a href="#projects">📁 Projects</a>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h1>Contact Me</h1>
+    <p>Let’s build something awesome 🚀</p>
+
+    <!-- Formspree form -->
+    <form class="contact-form" 
+          action="https://formspree.io/f/xojlnejq" 
+          method="POST" 
+          onsubmit="return validateForm()">
+
+      <input type="text" id="name" name="name" placeholder="Your Name">
+      <input type="email" id="email" name="email" placeholder="Your Email">
+      <textarea id="message" name="message" placeholder="Your Message" rows="5"></textarea>
+
+      <button type="submit">Send Message 📧</button>
+    </form>
+
+    <!-- WhatsApp Button -->
+    <a class="whatsapp"
+       href="https://wa.me/+254790347808"
+       target="_blank">
+       💬 Chat on WhatsApp
+    </a>
+
+    <!-- Social Links -->
+    <div class="socials">
+<a href="https://www.linkedin.com/in/adriano-wafula-48281b3a9/"><img src="https://th.bing.com/th/id/R.c1a3ad44057df610974c24bf46f6cae9?rik=7Zgn6mq2vYvoGA&pid=ImgRaw&r=0" alt=""></a>
+    <a href="https://X.com/yourusername"><img src="https://i.pinimg.com/736x/18/9a/1f/189a1fdfbe358e78b748df25013bd02a.jpg" alt=""></a>
+      <a href="https://www.instagram.com/kiserian_.darian?igsh=MWczaHF2YThkOG9hYw%3D%3D">
+  <img src="https://tse2.mm.bing.net/th/id/OIP.7vfM_K66FMSrGovHI_839gHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Instagram" width="24">
+</a>
+
+    </div>
+  </section>
+
+  <script src="contact.js"></script>
+
+
+    <footer>
+      <p>© 2026 Adrianowafula</p>
+    </footer>
+
+</body>
+
+</html>
