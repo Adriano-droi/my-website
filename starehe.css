@@ -1,0 +1,83 @@
+body {
+    background-color: yellow;
+    font-family: fantasy;
+    background-position: 0cap;
+}
+h1  {
+    color: red(182, 95, 95);
+    text-align: center;
+    text-decoration: wavy;
+}
+.img-wrap {
+  position: relative;
+  width: 300px;
+}
+
+.img-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: yellow(255, 255, 0, 0.2); /* yellow overlay */
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+.form {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input, select {
+  padding: 10px;
+  font-size: 14px;
+}
+.page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 45%;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  max-width: 70%;
+}
+
+.logo {
+  width: 120px;
+}
+.photo-box {
+  width: 180px;
+}
+
+input[type="file"] {
+  margin-top: 6px;
+}
+
+
+
