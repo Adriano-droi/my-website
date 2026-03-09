@@ -4,50 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Adriano's portfolio website">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="portfolio.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-
+    <!-- Dark mode toggle -->
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
   <!-- HEADER -->
-  <header>
-    <h1>ADRIANO</h1>
-
+  <header class="header">
+    <div>
+      <img class="logo" src="img.png" alt="Logo">
+    </div>
     <nav class="navbar">
-      <a href="index.html">🏠 Home</a>
-      <a href="about.html">👤 About</a>
-      <a href="skills.html">🛠️ Skills</a>
-      <a href="#projects">📁 Projects</a>
-
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="about.html"><i class="fa-solid fa-user"></i> About</a>
+      <a href="skills.html"><i class="fa-solid fa-code"></i> Skills</a>
+      <a href="#projects"><i class="fa-solid fa-folder"></i> Projects</a>
+      <a href="contacts.html"><i class="fa-solid fa-envelope"></i> Contact</a>
     </nav>
-
   </header>
+  <h1>Hello, I'm Adriano here</h1>
   <div id="home"></div>
-<div id="about"></div>
+  <div id="about"></div>
   <section class="hero" id=home>
-    <h2>Hello, I'm Adriano</h2>
-    <img
-      src="https://scontent.fmba5-2.fna.fbcdn.net/v/t1.15752-9/622596098_2999233293799046_5586849969929355445_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=fc17b8&efg=eyJxZV9ncm91cHMiOlsiaWdkX2Jlc3RfZWZmb3J0X2ltYWdlOmNvbnRyb2wiXX0%3D&_nc_ohc=5NAET8SMcbQQ7kNvwH5dzwS&_nc_oc=Adkoxpx3_md7m9oBIicGyvL5G-ZMoeX6XFJMypeQmwFIUa1XOsQZG9v8UR9Bz6ax1Mo&_nc_zt=23&_nc_ht=scontent.fmba5-2.fna&oh=03_Q7cD4gEs1luzk-bHf9EhV_k8J1ncXKpa9APi3v9_gno4uUY7AA&oe=69A520D8"
-      alt="Me" class="profile-pic">
+    
+    <img src="the pic.png" alt="Me" class="profile-pic">
     <p>Web Developer | Content Creator</p>
   </section>
 
-<div>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate web developer with skills in HTML and CSS.Not only that but I also do content creation e.g.
-    <ul>
-      <li>Dancing</li>
-      <li>Free speaches</li>
-      <li>Artistic objection</li>
-    </ul>
-    </p>
-  </section>
-</div>
+  <div>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate web developer with skills in HTML and CSS.Not only that but I also do content creation e.g.
+      <ul>
+        <li>Dancing</li>
+        <li>Free speaches</li>
+        <li>Artistic objection</li>
+      </ul>
+      </p>
+    </section>
+  </div>
 
   <section id="skills">
     <h2>Skills</h2>

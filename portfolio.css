@@ -1,16 +1,37 @@
 body  {
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(125, 99, 238);
+    background-color: #cfd8ff;
     background-position: 0cap;
-}
 
+}
+.logo{
+  width:100px
+}
+.header {
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 12px 24px;
+margin: 16px;
+border-radius: 17px;
+background: #040016;
+backdrop-filter: blur(14px);
+-webkit-backdrop-filter: blur(14px);
+box-shadow: #3b3b5c;
+}
+h3{
+  color:#040016 ;
+}
 .dashboard {
   width: 220px;
-  background: #1e1e2f;
+  background: #0e0e18;
   padding: 10px;
   height:auto;
 }
-
+h2{
+  color: #4f46e5;
+}
 .dashboard a {
   display: block;
   padding: 12px 15px;
@@ -32,8 +53,9 @@ body  {
 
 h1  {
     color: red(182, 95, 95);
-    text-align: center;
     text-decoration: wavy;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 img {
@@ -58,29 +80,33 @@ font-size: larger;
   color: white;
   margin-bottom: 10px;
 }
-#home {
-  background-color: orange;
+/*#home {
+  background-color: #a9b1af;
 }
 
 #about {
-  background-color: teal;
+  background-color: #a9b1af;
 }
 #skills{
-  background-color:red;
+  background-color: #a9b1af;
 }
-
-
+#projects{
+background-color: #a9b1af;  
+}
+#contact{
+ background-color: #a9b1af;   
+}*/
 
 
 
 :root {
   --bg: #f4f4f4;
-  --card: white;
+  --card: rgb(249, 249, 252);
   --text: #000;
 }
 
 body.dark {
-  --bg: #121212;
+  --bg: #0e0e18;
   --card: #1e1e1e;
   --text: #fff;
 }
@@ -93,29 +119,37 @@ body {
 }
 
 /* Navbar */
+
 .navbar {
   display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 15px;
-  background: #111;
+  align-items: center;
+  gap: 14px;
 }
-
 .navbar a {
-  color: white;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #cfd8ff;
   text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+
+  transition: 0.3s ease, color 0.3s ease;
 }
 
-.navbar a.active {
-  color: #00ffcc;
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
 }
 
 /* Dark toggle */
 .dark-toggle {
-  position: fixed;
-  top: 15px;
+ position: fixed;
+  top: 110px;
   right: 15px;
-  padding: 8px 10px;
+  padding: 0px 0px;
   cursor: pointer;
 }
 
@@ -144,7 +178,7 @@ body {
 .contact-form button {
   padding: 12px;
   background: #111;
-  color: white;
+  color: rgb(233, 233, 240);
   border: none;
   cursor: pointer;
 }
@@ -152,7 +186,7 @@ body {
 .whatsapp {
   display: block;
   margin-top: 20px;
-  color: green;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   text-decoration: none;
 }
@@ -179,10 +213,10 @@ body {
 }
 
 .skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
+  display: flex;
+  display: inline;
+  gap: 40px;
+  max-width: 100px;
   margin: auto;
 }
 
@@ -201,7 +235,7 @@ body {
 
 .skill-card h3 {
   margin-bottom: 10px;
-  color: #00ffd5;
+  color: #a9b1af;
 }
 #projects a{
   color: blue;
@@ -218,17 +252,18 @@ body {
 
 .about-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-template-columns: repeat(2, 1fr);
+ grid-template-rows: repeat(2, 1fr); 
   gap: 20px;
   max-width: 1000px;
-  margin: auto;
+ align-items: stretch;
 }
 
 .about-card {
   background: #111;
   color: #fff;
   padding: 25px;
-  border-radius: 12px;
+  border-radius: 16px;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -273,6 +308,15 @@ p {
   cursor: grab;
 }
 
+
+.card {
+  background: #0f0f0f;
+  border-radius: 16px;
+  padding: 24px;
+  min-height: 260px; /* forces equal height */
+  display: flex;
+  flex-direction: column;
+}
 .canvas {
   cursor: crosshair;
 }
@@ -282,12 +326,12 @@ p {
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  background: #222;
-  color: white;
+  background: #040016 ;
+  color: rgb(233, 232, 245);
 }
 .dark-mode {
-  background-color: #121212;
-  color: white;
+  background-color: #040016;
+  color: rgb(233, 232, 245);
 }
 @media (max-width: 768px) {
   nav {
